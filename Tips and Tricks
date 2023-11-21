@@ -1,0 +1,25 @@
+1. Add hyperlink for values for a column.
+Ans: Follow this youtube link but few steps are deprecated - https://www.youtube.com/watch?v=mxCAfHaqCxk&list=PLP1lvR8bTa3oNs11hMGA0SvGV46YJgo5z&index=1
+As of 21st Nov 2023, you can follow these steps:
+  a) Under Report View (far left side of pane), select the URL column from Data Panel (from far right panel)
+  b) Under Column tools menu, select "Data Category" as "Uncategorized"
+  c) After selecting table to add hyperlink, select "Format your report" icon from "Visualizations" pane
+  d) Select "Cell elements", select column to have hyperlink from "Series" dropdown.
+  e) Toggle on "Web URL", new pop up opens. 
+  f) "What field should we base this on?" - Choose column containing URL from the dropdown
+
+2. Power BI fails to pull data from JIRA when password of user email id updates.
+Ans: This needs to be done into 2 phases:
+Phase 1:-
+  a) Open the PBIX file and click on "Transform data" dropdown
+  b) Click "Data source setting"
+  c) Select JIRA OData url, click "Edit Permissions..."
+  d) Click "Edit...", select "Basic" and enter your new credentials
+  e) Click "OK"
+Phase 2:-
+  a) Click on "Transform data" dropdown
+  b) Click "Data source setting"
+  c) Select JIRA OData url, click "Change Source", then copy paste the value from URL section into URL section again
+  d) click "OK"
+  e) Repeat this for all JIRA Odata urls and try to "Refresh" Dashboard to get it working
+
